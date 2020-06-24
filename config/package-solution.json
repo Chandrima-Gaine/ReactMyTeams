@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "my-teams-client-side-solution",
+    "id": "494efe2d-9381-4dbc-bfab-6d47728ca3e6",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.ReadWrite.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/my-teams.sppkg"
+  }
+}
